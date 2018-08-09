@@ -1,16 +1,37 @@
 {
   "name": "learn-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://www.cnblogs.com/dadifeihong/p/6443272.html",
   "scripts": {
-    "clean":"rm -rf ./dist/*",
-    "start": "webpack --config ./config/webpack.config.js"
+    "clean": "rm -rf ./dist/*",
+    "start": "webpack-dev-server --open --config ./config/webpack.config.dev.js",
+    "build": "webpack --config ./config/webpack.config.prod.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "style-loader": "^0.22.1",
     "webpack": "^4.16.5",
-    "webpack-command": "^0.4.1"
-  }
+    "webpack-cli": "^3.1.0",
+    "webpack-command": "^0.4.1",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xbeeprince/learn-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xbeeprince/learn-react/issues"
+  },
+  "homepage": "https://github.com/xbeeprince/learn-react#readme"
 }

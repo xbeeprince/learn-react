@@ -10,8 +10,8 @@ module.exports = {
         main: "./index.js" //在源文件目录下去找index.js 文件作为打包的入口文件
     },
     output: {
-        path: path.resolve(__dirname, "../dist"), //生成的文件存放目录
-        filename: "[name].bundle.js" //生成的文件 name 表示entry下面的main
+        publicPath: 'dist',//webpack-dev-server的调试服务器虚拟目录，本地不会生成
+        filename: "[name].bundle.js", //生成的文件 name 表示entry下面的main
     },
     module: {
         rules: [{
